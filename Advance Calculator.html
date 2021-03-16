@@ -1,0 +1,296 @@
+<style>
+
+h1{
+  color:#01FF70;
+  transition:2s;
+}
+h1:hover
+{
+box-shadow: 0 5px 50px 0 #01FF70 inset, 0 5px 50px 0 #01FF70,
+    0 5px 50px 0 #01FF70 inset, 0 5px 50px 0 #01FF70;
+  text-shadow:0 0 5px #01FF70, 0 0 5px #01FF70;
+}
+
+body{
+
+background:#060c21;
+}
+
+
+
+.button{
+background-color:#000;
+position:relative;
+
+width:200px;
+border:3px solid #15f4ee;
+color:#15f4ee;
+
+text-align:center;
+
+text-transform:uppercase;
+letter-spacing:2px;
+cursor:pointer;
+border-radius:100px;
+transition:1.5s;
+}
+.button:hover
+{
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+    0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow:0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
+p{
+color:#FFDC00;
+transition:1.5s;
+}
+p:hover
+{
+  box-shadow: 0 5px 50px 0 #FFDC00 inset, 0 5px 50px 0 #FFDC00,
+    0 5px 50px 0 #FFDC00 inset, 0 5px 50px 0 #FFDC00;
+  text-shadow:0 0 5px #FFDC00, 0 0 5px #FFDC00;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center><h1>SABBIR CALCULATOR</h1></center>
+<hr>
+
+
+<script>console.log("My name is sabbir.I am a student")
+        alert("This site is only for calculation  {SABBIR}")
+</script>
+
+
+
+    <button class="button" onclick="afunction()">Start Addition</button>
+
+         <p id="a"></p>
+
+<br>
+
+    <button class="button" onclick="bfunction()">Start Subtraction</button>
+
+         <p id="b"></p>
+
+<br>
+
+    <button class="button" onclick="cfunction()">Start Maltiplication</button>
+
+         <p id="c"></p>
+
+<br>
+
+    <button class="button" onclick="dfunction()">Start Divition</button>
+
+         <p id="d"></p>
+
+<br>
+
+    <button class="button" onclick="efunction()">Start Reminder</button>
+
+         <p id="e"></p>
+
+<br>
+
+    <button class="button" onclick="ffunction()">Start Exponent</button>
+
+         <p id="f"></p>
+
+
+
+
+<br>
+
+   <button class="button" onclick="h()">℃ to ℉</button>
+ 
+       <p id="h"></p>
+
+
+
+
+<br>
+
+   <button class="button" onclick="g()">℉ to ℃</button>
+
+        <p id="g"></p>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+         function afunction(){
+
+       var fastnum=prompt("Addition input")
+       var secondnum=prompt("Again Addition input")
+
+
+ fastnum=parseFloat(fastnum)
+ secondnum=parseFloat(secondnum)
+
+var a;
+
+  a=fastnum+secondnum;
+
+document.getElementById("a").innerHTML= "The ADDITION value is :" + a + "<br><br>"
+}
+
+
+
+
+
+         function bfunction(){
+
+        var thnum=prompt("Subtraction input")
+        var fonum=prompt("Again Subtraction input")
+
+
+ thnum=parseFloat(thnum)
+ fonum=parseFloat(fonum)
+
+var b;
+
+  b=thnum-fonum;
+
+document.getElementById("b").innerHTML= "The SUBTRACTION value is :" + b + "<br><br>"
+}
+
+
+
+
+
+           function cfunction(){
+
+         var finum=prompt("Multiplication input")
+         var sinum=prompt("Again Multiplication input")
+
+
+ finum=parseFloat(finum)
+ sinum=parseFloat(sinum)
+
+var c;
+
+  c=finum*sinum;
+
+document.getElementById("c").innerHTML= "The MULTIPLICATION value is :" + c + "<br><br>"
+}
+
+
+ 
+
+
+            function dfunction(){
+
+        var senum=prompt("Divition input")
+        var einum=prompt("Again Divition input")
+
+
+ senum=parseFloat(senum)
+ einum=parseFloat(einum)
+
+var d;
+
+  d=senum/einum;
+
+document.getElementById("d").innerHTML= "The DIVITION value is :" + d + "<br><br>"
+}
+
+
+
+
+             function efunction(){
+
+        var ninum=prompt("Reminder input")
+        var tenum=prompt("Again Reminder input")
+
+
+ ninum=parseFloat(ninum)
+ tenum=parseFloat(tenum)
+
+var e;
+
+  e=ninum%tenum;
+
+document.getElementById("e").innerHTML= "The REMINDER value is :" + e + "<br><br>"
+}
+
+
+
+
+
+              function ffunction(){
+
+         var elnum=prompt("Base input")
+         var twnum=prompt("Power input")
+
+
+ elnum=parseFloat(elnum)
+ twnum=parseFloat(twnum)
+
+var f;
+
+  f=elnum**twnum;
+
+document.getElementById("f").innerHTML= "The EXPONANT value is :" + f + "<br><br>";
+}
+
+
+             function h(){
+
+
+var ca, 
+
+ca=prompt("Temperature in Celsius :")
+
+fa=(9/5)*ca + 32
+
+
+document.getElementById("h").innerHTML="The TEMPERATURE is : " + fa +"℉" + "<br><br>"
+
+
+}
+
+          
+
+
+             function g(){
+
+var fa,
+
+fa=prompt("Temperature in Fahrenheit :")
+
+c=(5/9)*(fa-32)
+
+document.getElementById("g").innerHTML="The TEMPERATURE is : " + c + "℃" + "<br><br>"
+
+
+}
+
+
+
+
+</script>
